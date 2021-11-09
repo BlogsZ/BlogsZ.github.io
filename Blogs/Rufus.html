@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Created By Sifana Candra A.M -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>X TKJ2 Blogs</title>
+      <link rel="stylesheet" href="/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+
+      <p>Log In 
+
+         <a href="http://kelasvirtualsmkpgri11ciledug.com/moodle/login/index.php">KelasVirtual</a></p>
+   
+      <nav>
+         <div class="menu-icon">
+            <span class="fas fa-bars"></span>
+         </div>
+         <div class="logo">
+            X TKJ 2
+         </div>
+         <div class="nav-items">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/MyBlogs.html">Blogs</a></li>
+            <li><a href="/ContactMe.html">ContactMe?</a></li>
+            <li><a href="/Information.html">Creator</a></li>
+         </div>
+         <div class="search-icon">
+            <span class="fas fa-search"></span>
+         </div>
+         <div class="cancel-icon">
+            <span class="fas fa-times"></span>
+         </div>
+         <form action="#">
+            <input type="search" class="search-data" placeholder="Search" required>
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+      </nav>
+      <div>
+          <h2>
+         <header class="space">Installasi Software Rufus</header>
+        </h2>
+         <div class="space text">
+            Tutorial :
+         </div>
+         
+         <div class="space text">            
+1. Unduh Rufus
+Buka situs web Rufus.ie dan unduh versi terbaru Rufus lewat browser di laptop atau PC. Setelah selesai pengunduhan, klik dua kali pada file Rufus untuk membukanya. Jadi, kamu tidak perlu meng-instal aplikasi ini. Pasang USB di PC atau laptop yang sudah ada di aplikasi Rufus. Kemudian, Rufus akan mendeteksi USB kamu secara otomatis. Jika tidak, kamu bisa memilih disk boot yang diinginkan dengan klik menu di bagian bawah 'Device''.
+         </div>
+
+         <div class="space text">
+            2. Jalankan Drive Bootable Dari Perangkat
+Klik 'boot selection' dan pilih metode boot yang sesuai dengan drive kamu. Kemudian, klik tombol 'Select'. Selanjutnya, pilih 'Image Option'. Kamu bisa menggunakan opsi 'Standart Windows Installation' untuk meng-instal Windows pada disk lain. Setelah itu, pilih opsi 'Windows To Go' jika ingin menjalankan drive bootable langsung dari perangkat.
+         </div>
+
+         <div class="space text">
+            3. Centang Semua List yang Tersedia
+Pilih 'Partition scheme', 'File System', dan 'Target System' sesuai dengan perangkat yang akan di-instal. Klik 'Show advance format options'. Lalu, centang semua list yang tersedia. Terakhir, klik tombol 'Start' dan proses pembuatan USB Bootable akan berlangsung. Tunggu hingga proses selesai.
+
+Saat ini, flashdisk kamu sudah menjadi USB bootable yang bisa digunakan untuk meng-instal sistem operasi Windows. Sebelum melakukan instalasi, sebaiknya kamu melihat persyaratan apakah perangkatmu memungkinkan untuk dilakukan instalasi atau tidak.
+         </div>
+
+         <div class="space text">Berikut ini adalah beberapa pilihan pengaturan 'Partition scheme', 'Target system', dan 'File system' untuk masing-masing Mode Bios:
+         </div>
+
+         <div class="space text">+ Membuat UEFI dan Legacy Secara Bersamaan</div>
+
+         <div class="space text">+ Tekan tombol ALT + E</div>
+
+         <div class="space text">+ Pilih partition scheme: MBR
+         </div>
+
+         <div class="space text">+ Target system: BIOS atau UEFI
+         </div>
+
+         <div class="space text">+ File system: FAT32, namun jika ISO lebih dari 4GB, pilih NTFS</div>
+
+         <div class="space text">+ Membuat UEFI Saja
+
+            Partition scheme: GPT
+            
+            Target system: UEFI (Non CSM)
+            
+            File system: FAT32</div>
+
+         <div class="space text">+ Membuat Legacy Saja
+
+            Partition scheme: MBR
+            
+            Target system: BIOS (or UEFI-CSM)
+            
+            File system: NTFS</div>
+
+
+            <div class="space text">
+               <p>Kamu bisa melihat Mode BIOS perangkat yang akan di-instal dengan cara klik 'Windows + R', kemudian ketik msinfo32 dan tekan 'OK'. Cari bagian BIOS Mode dan lihat jenisnya.</p>
+            </div>
+
+      </div>
+      <script>
+         const menuBtn = document.querySelector(".menu-icon span");
+         const searchBtn = document.querySelector(".search-icon");
+         const cancelBtn = document.querySelector(".cancel-icon");
+         const items = document.querySelector(".nav-items");
+         const form = document.querySelector("form");
+         menuBtn.onclick = ()=>{
+           items.classList.add("active");
+           menuBtn.classList.add("hide");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+         cancelBtn.onclick = ()=>{
+           items.classList.remove("active");
+           menuBtn.classList.remove("hide");
+           searchBtn.classList.remove("hide");
+           cancelBtn.classList.remove("show");
+           form.classList.remove("active");
+           cancelBtn.style.color = "#BFBFBF";
+         }
+         searchBtn.onclick = ()=>{
+           form.classList.add("active");
+           searchBtn.classList.add("hide");
+           cancelBtn.classList.add("show");
+         }
+      </script>
+   </body>
+</html>
